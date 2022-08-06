@@ -1,107 +1,160 @@
+*,
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
-    position:fixed;
-    padding: 1.5vh;
-    background-color: #C55394;
-    width: 100%;
     top: 0;
     left: 0;
     z-index: 2;
-} /* section barre de menu */
-#unicorn {
+    width: 100%;
+    padding: 1vh;
+    display: flex;
     position: fixed;
-    font-family: 'courgette' ;
-    font-size: 1em;
-    font-weight: bold;
-    margin-left: 0.2%;
-} /* Mise en style du menu MyUnicorn */
-#principe {
-    position: fixed;
-    font-family: arial;
-    font-size: 0.8em;
-    margin-left: 70%;
-} /* Mise en style du menu principe */
-#licorne {
-    position: fixed;
-    font-family: arial;
-    font-size: 0.8em;
-    margin-left: 78.5%;
-} /* Mise en style du menu licorne */
-#find-us {
-    font-family: arial;
-    font-size: 0.8em;
-    margin-left: 90%;
-} /* Mise en style du menu nous trouver */
-a.one, a.two {color:#FFF;
-       text-decoration: none;
+    flex-wrap: wrap;
+    background-color: #C55394;
+    justify-content: space-between;
 }
-a.two:hover {background-color: #EB43A3;
+
+header h1 {
+    font-size: large;
+    margin: 5px 0 0 0;
+    font-family: 'Courgette', cursive;
+}
+
+
+/* section barre de menu */
+
+a.one,
+a.two {
+    color: #FFF;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+a.two:hover {
     padding: 1.7vh;
-} /* link color and menu hover */
+    background-color: #EB43A3;
+}
+
+
+/* link color and menu hover */
+
+main {
+    background-image: url('../img/background.png');
+}
+
 #shadow {
-    margin: 7vh 3vw;
+    margin: 2vh 7vw 6vh 7vw;
     padding: 3% 2.5%;
+    width: fit-content;
+    border-radius: 0.7em;
     background-color: #fff;
     box-shadow: 0em 0em 1em 0em;
-    border-radius: 0.7em;
-} /* Propriete de la bordure externe */
-#title {
-    margin-top: 22vh;
-    margin-bottom: -30px;
-    margin-left: 44%;
-    font-family: 'Courgette';
+}
+
+
+/* Propriete de la bordure externe */
+
+.title {
     font-size: 1.7em;
-    font-weight:bold;
+    font-weight: bold;
     color: #C55394;
-} /* Mise en style du titre */
-#rainbow {
-    position: absolute;
-    margin-left: 30%;
-    margin-top: -7%;
-} /* Arc en ciel */
-#head {
-    font-family: 'Courgette';
+    text-align: center;
+    margin-top: -120px;
+    font-family: 'Courgette', cursive;
+}
+
+
+/* Mise en style du titre */
+
+.rainbow {
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+/* Arc en ciel */
+
+.head {
     color: #EB43A3;
     font-size: 1.3em;
     font-style: italic;
-} /* Mise en style des 3 sous-titres */
-
-* {box-sizing: border-box;} 
-.row {display: flex;}
-.column {flex: 25%;
-        padding: 1em;}
-.column:hover {
-    transform: scale(1.1);
+    font-family: 'Courgette', cursive;
 }
-.row1 {display: flex;}
-.column1 {flex: 50%;
-        padding: 1em;}
-/* Affichage lineaire des images et du frame */
-#end {
-    font-family: 'Courgette';
-    color: #C55394;
-    font-size: 1.2em;
-    font-weight: bolder;
-} /* Mise en style des autres titres */ 
-figcaption {
-    position:relative ;
+
+
+/* Mise en style des 3 sous-titres */
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 1em;
+}
+
+.line figure {
+    position: relative;
+}
+
+.line .column figure figcaption {
+    position: absolute;
     padding: 0.5em;
     color: #FFF;
     background-color: #333;
     width: 100%;
     text-align: center;
-    bottom: 3vh;
+    bottom: 0em;
     background: rgba(0, 0, 0, 0.7);
 }
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #EB43A3;
-  color:#FFF;
-  text-align: right;
-  font-size: xx-small;
-} /* Footer */
+
+.column:hover {
+    transform: scale(1.04);
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column1 {
+    flex: 50%;
+    padding: 1em;
+}
+
+
+/* Affichage lineaire des images et du frame */
+
+.row1 .column1 h6 {
+    font-family: 'Courgette';
+    color: #C55394;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+
+/* Mise en style des autres titres */
+
 input[type=submit] {
-  color: #FFF;
-  background-color: #C55394;
- }
+    color: #FFF;
+    background-color: #C55394;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+    font-size: xx-small;
+    background-color: #EB43A3;
+}
+
+
+/* Footer */
