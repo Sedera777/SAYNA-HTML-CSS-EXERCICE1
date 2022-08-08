@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+/* section barre de menu */
+
 header {
     top: 0;
     left: 0;
@@ -34,7 +37,7 @@ header nav ul li {
 }
 
 
-/* section barre de menu */
+/* link color and menu hover */
 
 header a.one,
 a.two {
@@ -52,12 +55,12 @@ header nav ul li:hover {
     background-color: #EB43A3;
 }
 
-
-/* link color and menu hover */
-
 main {
     background-image: url('../img/background.png');
 }
+
+
+/* Propriete de la bordure externe */
 
 #shadow {
     margin: 2vh 7vw 6vh 7vw;
@@ -69,7 +72,7 @@ main {
 }
 
 
-/* Propriete de la bordure externe */
+/* Mise en style du titre */
 
 .title {
     font-size: 1.7em;
@@ -81,7 +84,7 @@ main {
 }
 
 
-/* Mise en style du titre */
+/* Arc en ciel */
 
 .rainbow {
     text-align: center;
@@ -89,17 +92,14 @@ main {
 }
 
 
-/* Arc en ciel */
+/* Mise en style des 3 sous-titres */
 
-.head {
+h2 {
     color: #EB43A3;
     font-size: 1.3em;
     font-style: italic;
     font-family: 'Courgette', cursive;
 }
-
-
-/* Mise en style des 3 sous-titres */
 
 .line {
     display: flex;
@@ -113,6 +113,11 @@ main {
 
 .line figure {
     position: relative;
+}
+
+.fa-star-o {
+    color: #EB43A3;
+    font-size: 22px;
 }
 
 .line .column figure figcaption {
@@ -135,13 +140,16 @@ main {
     flex-wrap: wrap;
 }
 
+
+/* Affichage lineaire des images et du frame */
+
 .row1 .column1 {
     flex: 50%;
     padding: 1em;
 }
 
 
-/* Affichage lineaire des images et du frame */
+/* Mise en style des autres titres */
 
 .row1 .column1 h6 {
     font-family: 'Courgette';
@@ -150,13 +158,13 @@ main {
     font-weight: bolder;
 }
 
-
-/* Mise en style des autres titres */
-
 input[type=submit] {
     color: #FFF;
     background-color: #C55394;
 }
+
+
+/* Footer */
 
 footer {
     bottom: 0;
@@ -168,6 +176,3 @@ footer {
     font-size: xx-small;
     background-color: #EB43A3;
 }
-
-
-/* Footer */

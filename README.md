@@ -1,7 +1,7 @@
 ## Programme D-CLIC
 ## Projet N°1
 
-## Initiation à l'HTML et au CSS
+## Evaluation pratique HTML / CSS
 
     Premier projet sur la base de l'HTML et le CSS:
 
