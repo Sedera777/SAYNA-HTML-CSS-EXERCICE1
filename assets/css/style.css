@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    color: #333;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
 
 /* section barre de menu */
 
@@ -17,12 +23,13 @@ header {
     position: fixed;
     flex-wrap: wrap;
     background-color: #C55394;
+    align-items: center;
     justify-content: space-between;
 }
 
 header h1 {
-    font-size: large;
-    margin: 7px 0 0 0;
+    font-size: 2.5vh;
+    font-weight: normal;
     font-family: 'Courgette', cursive;
 }
 
@@ -33,7 +40,7 @@ header ul {
 }
 
 header nav ul li {
-    padding-top: 7px;
+    display: inline;
 }
 
 
@@ -47,11 +54,12 @@ a.two {
 }
 
 header nav ul li a.two {
+    font-size: 12px;
     margin-top: 15px;
 }
 
 header nav ul li:hover {
-    padding-bottom: 13px;
+    padding: 12px 0;
     background-color: #EB43A3;
 }
 
@@ -63,7 +71,7 @@ main {
 /* Propriete de la bordure externe */
 
 #shadow {
-    margin: 2vh 7vw 6vh 7vw;
+    margin: 4vh 7vw 6vh 7vw;
     padding: 3% 2.5%;
     width: fit-content;
     border-radius: 0.7em;
@@ -75,8 +83,8 @@ main {
 /* Mise en style du titre */
 
 .title {
-    font-size: 1.7em;
-    font-weight: bold;
+    font-size: 1.5em;
+    font-weight: bolder;
     color: #C55394;
     text-align: center;
     margin-top: -120px;
@@ -97,8 +105,12 @@ main {
 h2 {
     color: #EB43A3;
     font-size: 1.3em;
-    font-style: italic;
+    font-weight: normal;
     font-family: 'Courgette', cursive;
+}
+
+#leprincipe {
+    margin-bottom: 7px;
 }
 
 .line {
@@ -108,16 +120,11 @@ h2 {
 
 .line .column {
     flex: 25%;
-    padding: 1em;
+    padding: 10px;
 }
 
 .line figure {
     position: relative;
-}
-
-.fa-star-o {
-    color: #EB43A3;
-    font-size: 22px;
 }
 
 .line .column figure figcaption {
@@ -146,6 +153,7 @@ h2 {
 .row1 .column1 {
     flex: 50%;
     padding: 1em;
+    font-size: 12px;
 }
 
 
@@ -159,7 +167,11 @@ h2 {
 }
 
 input[type=submit] {
+    border: none;
     color: #FFF;
+    padding: 7px 14px;
+    margin-top: 10px;
+    border-radius: 5px;
     background-color: #C55394;
 }
 
